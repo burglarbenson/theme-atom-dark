@@ -13,8 +13,8 @@ install:
   - pip install --upgrade ".[test]" -v
 script:
   - jupyter nbextension list
-  - jupyter nbextension enable --py --sys-prefix {{ cookiecutter.extension_name }}
+  - jupyter nbextension enable --py --sys-prefix theme-atom-dark
   - pip install jupyterlab
   - jupyter labextension list
-  - jupyter labextension list 2>&1 | grep -q {{ cookiecutter.extension_name }}
+  - jupyter labextension list 2>&1 | grep -q theme-atom-dark
   - jupyter labextension link

@@ -1,8 +1,6 @@
-{%- set extension_id = [cookiecutter.org_name, cookiecutter.extension_name]|join('/') if cookiecutter.org_name else cookiecutter.extension_name -%}
+# theme-atom-dark
 
-# {{ extension_id }}
-
-{{ cookiecutter.project_short_description }}
+A one dark import into jupyter lab
 
 ## Prerequisites
 
@@ -11,7 +9,7 @@
 ## Installation
 
 ```bash
-jupyter labextension install {{ extension_id }}
+jupyter labextension install theme-atom-dark
 ```
 
 ## Development

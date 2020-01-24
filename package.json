@@ -1,8 +1,8 @@
 {
-  "name": "{{ [cookiecutter.org_name, cookiecutter.extension_name]|join('/') if cookiecutter.org_name else cookiecutter.extension_name }}",
+  "name": "theme-atom-dark",
   "version": "0.1.0",
-  "description": "{{ cookiecutter.project_short_description }}",
-  "author": "{{ [cookiecutter.author_name, ' <', cookiecutter.author_email, '>']|join if cookiecutter.author_email else cookiecutter.author_name }}",
+  "description": "A one dark import into jupyter lab",
+  "author": "burglarbenson",
   "keywords": [
     "jupyter",
     "jupyterlab",
@@ -54,22 +54,12 @@
     "extension": true,
     "themePath": "style/index.css"
   },
-  "homepage": "{{ cookiecutter.homepage }}",
-{%- if "github.com/" in cookiecutter.homepage %}
+  "homepage": "https://github.com/burglarbenson/theme-atom-dark",
   "bugs": {
-    "url": "{{ cookiecutter.homepage }}/issues"
+    "url": "https://github.com/burglarbenson/theme-atom-dark/issues"
   },
   "repository": {
     "type": "git",
-    "url": "{{ cookiecutter.homepage }}.git"
+    "url": "https://github.com/burglarbenson/theme-atom-dark.git"
   }
-{%- else %}
-  "bugs": {
-    "url": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
-  }
-{%- endif %}
 }

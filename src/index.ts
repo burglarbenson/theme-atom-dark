@@ -1,5 +1,3 @@
-{%- set extension_id = [cookiecutter.org_name, cookiecutter.extension_name]|join('/') if cookiecutter.org_name else cookiecutter.extension_name -%}
-
 import {
   JupyterFrontEnd,
   JupyterFrontEndPlugin
@@ -8,16 +6,16 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * A plugin for {{ extension_id }}
+ * A plugin for theme-atom-dark
  */
 const plugin: JupyterFrontEndPlugin<void> = {
-  id: '{{ extension_id }}:plugin',
+  id: 'theme-atom-dark:plugin',
   requires: [IThemeManager],
   activate: function(app: JupyterFrontEnd, manager: IThemeManager) {
-    const style = '{{ extension_id }}/index.css';
+    const style = 'theme-atom-dark/index.css';
 
     manager.register({
-      name: '{{ cookiecutter.extension_name }}',
+      name: 'theme-atom-dark',
       isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
