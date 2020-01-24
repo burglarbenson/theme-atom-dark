@@ -30,8 +30,8 @@
     "watch:webpack": "webpack --watch"
   },
   "dependencies": {
-    "@jupyterlab/application": "^2.0.0-beta.2",
-    "@jupyterlab/apputils": "^2.0.0-beta.2"
+    "@jupyterlab/application": "^0.19.1",
+    "@jupyterlab/apputils": "^0.19.1"
   },
   "devDependencies": {
     "rimraf": "~2.6.2",
